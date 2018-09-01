@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#ff2078dc"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/item_contacto"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Titulo"
+        />
+    <!--
+        <TextView
+            android:id="@+id/item_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12/26/2017"
+            android:gravity="right"
+            android:textStyle="bold"
+
+            />
+          -->
+    <TextView
+        android:id="@+id/item_telefono"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="suhshkshshuhssh"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="llamar"
+        android:id="@+id/item_llamar"
+
+        />
+    <Button
+        android:id="@+id/btn_eliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar" />
+
+
+</LinearLayout>
