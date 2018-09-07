@@ -6,13 +6,26 @@
     android:background="#ff2078dc"
     xmlns:android="http://schemas.android.com/apk/res/android" >
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:id="@+id/item_contacto"
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:text="Titulo"
         />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:id="@+id/iv_imagen"/>
+
+
+</LinearLayout>
+
     <!--
         <TextView
             android:id="@+id/item_fecha"

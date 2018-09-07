@@ -30,13 +30,22 @@ public class MainActivity extends AppCompatActivity {
         customAdapter = new ContactoAdapter(this);
         lv_contactos.setAdapter(customAdapter);
 
+
+
         btn_agregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                String genero ="";
+
+                if(s_genero.isChecked()){
+                    genero = "femenino";
+                } else {
+                    genero = "masculino";
+                }
                 String contacto = et_contacto.getText().toString();
                 String telefono = et_telefono.getText().toString();
-                Contacto newContacto = new Contacto(contacto,telefono);
+                Contacto newContacto = new Contacto(contacto,telefono,genero);
                 customAdapter.agregarContacto(newContacto);
                 et_contacto.setText("");
                 et_telefono.setText("");

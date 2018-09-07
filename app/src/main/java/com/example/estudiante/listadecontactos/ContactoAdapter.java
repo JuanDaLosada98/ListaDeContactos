@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -49,6 +50,7 @@ public class ContactoAdapter extends BaseAdapter{
     @Override
     public View getView(final int i, View view, ViewGroup viewGroup) {
 
+
         LayoutInflater inflater = activity.getLayoutInflater();
 
         View renglon = inflater.inflate(R.layout.renglon, null, false);
@@ -58,6 +60,15 @@ public class ContactoAdapter extends BaseAdapter{
         Button eliminar = renglon.findViewById(R.id.btn_eliminar);
         item_contacto.setText(contactos.get(i).getNombre());
         item_telefono.setText(contactos.get(i).getTelefono());
+        ImageView imagen = renglon.findViewById(R.id.iv_imagen);
+
+        if(contactos.get(i).getGenero().equals("masculino")){
+            imagen.setImageResource(R.drawable.masculino);
+        } else {
+            imagen.setImageResource(R.drawable.femenino);
+        }
+
+
         llamar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

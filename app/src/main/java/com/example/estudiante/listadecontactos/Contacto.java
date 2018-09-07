@@ -5,10 +5,13 @@ public class Contacto {
 
     private String nombre;
     private String telefono;
+    private String genero;
 
-    public Contacto(String nombre, String telefono) {
+
+    public Contacto(String nombre, String telefono, String genero) {
         this.nombre = nombre;
         this.telefono = telefono;
+        this.genero = genero;
     }
 
     public String getNombre() {
@@ -27,4 +30,11 @@ public class Contacto {
         this.telefono = telefono;
     }
 
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
 }
