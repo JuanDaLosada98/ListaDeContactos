@@ -63,9 +63,9 @@ public class ContactoAdapter extends BaseAdapter{
         ImageView imagen = renglon.findViewById(R.id.iv_imagen);
 
         if(contactos.get(i).getGenero().equals("masculino")){
-            imagen.setImageResource(R.drawable.masculino);
+            imagen.setImageResource(R.drawable.male);
         } else {
-            imagen.setImageResource(R.drawable.femenino);
+            imagen.setImageResource(R.drawable.female);
         }
 
 
