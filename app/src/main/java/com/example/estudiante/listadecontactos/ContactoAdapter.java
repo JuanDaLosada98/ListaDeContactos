@@ -64,8 +64,8 @@ public class ContactoAdapter extends BaseAdapter{
 
         if(contactos.get(i).getGenero().equals("masculino")){
             imagen.setImageResource(R.drawable.male);
-        } else {
-            imagen.setImageResource(R.drawable.female);
+        } else if (contactos.get(i).getGenero().equals("femenino")){
+            imagen.setImageResource(R.drawable.femenino);
         }
 
 
